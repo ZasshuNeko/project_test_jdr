@@ -1,0 +1,91 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .header {
+      width: 100%;
+      background-color: #333;
+      color: #f5f5f5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 1.5em;
+    }
+    .breadcrumb {
+      margin-top: 60px;
+      padding: 10px 20px;
+      background-color: #444;
+    }
+    .breadcrumb span {
+      cursor: pointer;
+      margin-right: 10px;
+      color: #f5f5f5;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+    }
+    .sidebar a {
+      color: #f5f5f5;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px 0;
+      transition: background-color 0.3s, border-left 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: #444;
+    }
+    .sidebar a.active {
+      border-left: 4px solid #f5f5f5;
+      background-color: #444;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    .card {
+      border: 1px solid #444;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #333;
+    }
+    .card-actions {
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      background-color: #f5a623;
+      color: #333;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #e74c3c;
+    }
+    input {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: calc(100% - 16px);
+      border: 1px solid #555;
+      background-color: #2c2c2c;
+      color: #f5f5f5;
+    }
