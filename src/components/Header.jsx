@@ -11,7 +11,7 @@ import React from 'react';
       return (
         <div className="header">
           <div className="logo">Site Logo</div>
-          <button onClick={handleLogout}>Déconnexion</button>
+          <button className="logout-button" onClick={handleLogout}>Déconnexion</button>
         </div>
       );
     }

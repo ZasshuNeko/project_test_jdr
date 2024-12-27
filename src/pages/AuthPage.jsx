@@ -6,13 +6,11 @@ import React, { useState } from 'react';
       const [username, setUsername] = useState('');
       const [password, setPassword] = useState('');
 
-      // Admin credentials
       const adminUsername = 'admin';
       const adminPassword = 'admin123';
 
       const handleLogin = (e) => {
         e.preventDefault();
-        // Check credentials
         if (username === adminUsername && password === adminPassword) {
           navigate('/dashboard');
         } else {
